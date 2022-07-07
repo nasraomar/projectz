@@ -1,0 +1,30 @@
+<table class="table caption-top">
+  <thead>
+    <tr>
+
+      <th scope="col">name</th>
+      <th scope="col">category</th>
+      <th scope="col">price</th>
+     <th scope="col">description</th>
+     <th scope="col">Action</th>
+    </tr>
+    <tr *ngFor="let us of user">
+    <td>{{us.name}}</td>
+    <td>{{us.category}}</td>
+    <td>{{us.price}}</td>
+    <td>{{us.description}}</td>
+    <td><button class="btn btn-danger" (click)="delete(us.id)">delete</button>&nbsp;
+       <button class="btn btn-success" (click)="(us)">update</button></td>
+  </tr>
+
+
+    
+  </thead>
+  <tbody>
+   
+
+    
+   
+   
+  </tbody>
+</table>

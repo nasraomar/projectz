@@ -1,0 +1,51 @@
+
+<form class="needs-validation" [formGroup]="customerForm" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01"> fname</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" formControlName="fname" >
+      <div class="valid-feedback">
+    
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02"> Lname</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" formControlName="lname">
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername">email</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" formControlName="email">
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">phone</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="phone"  formControlName="phone">
+      <div class="invalid-feedback">
+        Please provide a valid phone no.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">product</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="product"  formControlName="product">
+      <div class="invalid-feedback">
+      
+      </div>
+    </div>
+   
+    </div>
+
+  <button class="btn btn-primary" (click)="submit()">Submit form</button>
+</form>
+

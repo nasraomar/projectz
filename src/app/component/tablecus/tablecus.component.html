@@ -1,0 +1,29 @@
+<table class="table caption-top">
+
+  <thead>
+    <tr>
+
+      <th scope="col">fname</th>
+      <th scope="col">lname</th>
+      <th scope="col">email</th>
+     <th scope="col">phone</th>
+     <th scope="col">product</th>
+     <th scope="col">Action</th>
+    </tr>
+    <tr *ngFor="let cust of customer">
+      <td>{{cust.fname}}</td>
+      <td>{{cust.lname}}</td>
+      <td>{{cust.email}}</td>
+      <td>{{cust.phone}}</td>
+      <td>{{cust.product}}</td>
+      <td><button class="btn btn-danger" (click)="delete(cust.id)">delete</button>&nbsp; <button class="btn btn-success" (click)="update(cust)">update</button></td>
+    </tr>
+  </thead>
+  <tbody>
+   
+
+    
+   
+   
+  </tbody>
+</table>
